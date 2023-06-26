@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  margin : 0 ;
+  padding : 0;
+  box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: rgb(142, 103, 232);
 }
+.app{background-color: white;}
+
+.app {
+  position : relative;
+  border: 1px solid black;
+  display : flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width : 50rem;
+  height: 100vh;
+  margin : 0 auto;
+}
+
+.header,.footer {
+  border : 1px solid black;
+  width : 100%;
+  margin : 0 auto;
+  display : flex;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: rgb(73, 207, 228);
+}
+
+.additem  {
+  padding : 1rem;
+}
+
+.additem input[type='text'] {
+  border-radius: 5px;
+  width : 90%;
+  height : 47px;
+  margin-right: 5px;
+}
+.additem input[type='text']::placeholder,
+.search input[type = 'text']::placeholder {
+ text-align : center;
+  font-size: 1.5rem;
+}
+.additem button {
+  position : absolute;
+  border : none;
+  background-color: white;
+  right : 1.7rem;
+  width: 3.7rem;
+  height: 3.5rem;
+}
+.additem .add {
+  border-radius: 5px;
+  width : 50px;
+  height : 50px;
+}
+.additem .add:hover {
+  background-color: rgb(202, 246, 224);
+}
+.search {
+ padding : 1rem;
+ padding-top : 0;
+}
+.search input[type = 'text'] {
+  width : 90%;
+  height : 40px;
+  border-radius : 5px;
+}
+
+.main {
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  margin-top : 2rem;
+  max-height : 31rem;
+  width : 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  position : relative;
+  list-style: none;
+  margin : 0 2rem;
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+ 
+}
+
+.item input[type="checkbox"] {
+  height : 50px;
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.item label {
+  font-size : 2.5rem;
+  margin : auto 0;
+}
+
+.trash {
+  position : absolute;
+  right : 0;
+  width: 50px;
+  height: 50px;
+}
+.trash:hover
+ {
+  color : red;
+}
+
+
+.footer {
+  position: absolute;
+  bottom : 0;
+  background-color: bisque;
+}
+
+
+
+@media only screen and (max-width : 450px){
+  .app{
+    min-width: 460px;
+    height: 100vh;
+  }
+  .additem input[type='text'] {
+    width : 86%;
+  }
+  .additem button {
+    right : 2rem;
+    width: 28px;
+    height: 27px;
+  }
+  .main ul,
+  .item,
+  .footer {
+    min-width: 400px;
+  }  
+
+}
+

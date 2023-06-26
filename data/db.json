@@ -1,0 +1,39 @@
+{
+  "listData": [
+    {
+      "id": 2,
+      "name": "HTML",
+      "checked": false
+    },
+    {
+      "id": 3,
+      "name": "CSS",
+      "checked": false
+    },
+    {
+      "id": 4,
+      "name": "Java Script",
+      "checked": false
+    },
+    {
+      "id": 5,
+      "name": "Python",
+      "checked": false
+    },
+    {
+      "id": 6,
+      "name": "Java",
+      "checked": false
+    },
+    {
+      "id": 7,
+      "name": "MySql",
+      "checked": false
+    },
+    {
+      "id": 8,
+      "name": "React Js",
+      "checked": false
+    }
+  ]
+}
